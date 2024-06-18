@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {margin:0;}
+
+        .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        width: 100%;
+        height: 11%;
+        z-index: 2;
+        text-align: center;
+        align-content: center;   
+        font-size: 50px;
+        color: #f2f2f2;
+        display: block;
+
+        }
+        .dropdown {
+        z-index: 5;
+        position: fixed;
+        color: #f2f2f2;
+        background-color: #333;
+        height: 11%;
+        padding: 0px 50px 0px 50px;
+        text-decoration: none;
+        align-content: center;   
+        font-size: 20px;
+        display: inline-block;
+        }
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        text-align: left;
+        top:100%;
+        background-color: #f9f9f9;
+        color: #000;
+        min-width: 100%;
+        padding: 12px 16px;
+        }
+        .dropdown:hover{
+        background: #ddd;
+        color: black;
+
+        }
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+        .main {
+        z-index: 1;
+        text-align: center;
+        justify-content: center;       
+        width: 100%;
+        height: 100%;
+        background-color: #f9e6e6;
+        position: absolute;
+        padding: 70px 0px 70px 0px;
+        margin-top: 30px;
+        /* 水平置中 */
+        flex-wrap: wrap;
+        }
+  
+        .button {
+        color: rgb(0, 0, 0);
+        background-color: #adadad;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: 0.3s;
+        }
+        .button:hover{
+        background-color: #93ea88;
+
+        }
+
+        .cha{
+            border:  5px solid #666;
+            border-radius: 50px;
+            color: rgb(0, 0, 0);
+            background-color: #adadad;
+            text-align: left;
+            width: 70%;
+            margin: 0 auto;
+        }
+    </style>
+        
+</head>
+<body>
+<!-- 上面的bar -->
+<a href="C:\Users\User\Documents\code\web\index.html" class="dropdown" style="left: 0;">HOME</a>
+
+    <div class="navbar" >IVE</div>
+    <div class="dropdown" style="right: 0;">
+        <p>MEMBER</p>
+        <div class="dropdown-content">
+        <p><a href="C:\Users\User\Documents\code\web\menber1.html">n1</a></p>
+        <p></p><a href="C:\Users\User\Documents\code\web\menber2.html">n2</a></p>
+        </div>
+    </div>
+
+    <!-- 一個容器把bar以下的東西包起來 -->
+    <div class="main">
+        <!-- 標題 -->
+        <hr>
+        <h1>成員一名稱</h1>
+        <hr>
+        
+        <!-- 影片 -->
+        <video width="700" controls>
+            <source src="我的影片ive.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+
+        <!-- 介紹方格 -->
+        <div class="cha">
+            <h2 style="text-align: center;">介紹</h2>
+            <p style="padding: 0px 50px;">他是ive的成員他是ive的成員他是ive的成員他是ive的成員他是ive的成員他是ive的成員他是ive的成員他是ive的成
+                員他是ive的成員他是ive的成員他是ive的成員他是ive的成員他是ive的成員他是ive的成員他是ive的成員</p>
+            <ul style="list-style-type: circle; ">
+                <li>年齡</li>
+                <li>身高</li>
+                <li>資歷</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
